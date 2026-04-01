@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Edits Short Videos</title>
+    <link rel="stylesheet" href="/animeedit.css">
+</head>
+<body>
+
+<button class="btn-back" onclick="window.history.back()">
+  <span class="icon">🔙</span>
+  <span class="text">Back</span>
+</button>
+
+
+    <header>
+        <h1>Anime Edits Short Videos</h1>
+        <input type="text" id="searchInput" placeholder="Search for Anime Edits Short Videos..." onkeyup="filterVideos()">
+    </header>
+
+    <main class="video-grid" id="videoGrid"></main>
+
+    <div id="videoOverlay" class="overlay" onclick="closeOnEmpty(event)">
+        <span class="close-btn" onclick="closeVideo()">&times;</span>
+        <div class="overlay-content">
+            <video id="mainPlayer" controls autoplay loop>
+                <source src="" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <script src="/animeedit.js"></script>
+
+
+
+
+    <!-- Back to Top and Scroll to Bottom Buttons -->
+    <button id="backToTop" class="btn-top" onclick="scrollToTop()">
+  <span class="icon">🔼</span>
+</button>
+
+<script>
+    function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+</script>
+
+</body>
+</html>

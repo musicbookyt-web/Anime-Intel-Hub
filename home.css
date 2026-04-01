@@ -1,0 +1,291 @@
+/* Core button styling */
+.rgb-button {
+  position: relative;
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: #111; /* Dark center to make RGB pop */
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* The flowing RGB border effect */
+.rgb-button::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    #ff0000, #ff7300, #fffb00, #48ff00, 
+    #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000
+  );
+  animation: rotate-rgb 4s linear infinite;
+  z-index: -2;
+}
+
+/* Creating the "outline" look by masking the center */
+.rgb-button::after {
+  content: '';
+  position: absolute;
+  inset: 3px; /* Controls the thickness of the border */
+  background: #1a1a1a;
+  border-radius: 10px;
+  z-index: -1;
+  transition: background 0.3s;
+}
+
+/* Text styling to ensure it stays above the backgrounds */
+.rgb-button span {
+  position: relative;
+  z-index: 2;
+}
+
+/* Hover effect */
+.rgb-button:hover::after {
+  background: #222;
+}
+
+/* Rotation Animation */
+@keyframes rotate-rgb {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.button {
+  display: flex;
+  gap: 50px; /* Space between buttons */
+  justify-content: center; /* Center the buttons horizontally */
+  margin-top: 30px; /* Space above the button group */
+  background: #202C2E;
+  padding: 30px;
+    border-radius: 15px;
+    margin-left: 93px;
+    margin-right: 93px;
+}
+
+
+
+
+
+/* Subscribe Button Styling */
+
+.subscribe-btn {
+  /* Layout and Sizing */
+  padding: 14px 36px;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  
+  /* Colors */
+  color: #ffffff;
+  background: linear-gradient(135deg, #ff0000 0%, #b30000 100%);
+  
+  /* Animation and Shadow */
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+  animation: pulse-red 2s infinite;
+}
+
+/* Interaction Effects */
+.subscribe-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.8);
+  background: linear-gradient(135deg, #ff1a1a 0%, #cc0000 100%);
+}
+
+.subscribe-btn:active {
+  transform: translateY(1px);
+}
+
+/* Pulsing Glow Animation */
+@keyframes pulse-red {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(255, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*Other styling*/
+
+nav {
+            background-color: #333;
+            padding: 5px;
+        }
+
+        nav h1 {
+            color: white;
+            display: inline-block;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: inline-block;
+            margin-left: 450px;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 7px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        ul li {
+            font-size: 20px;
+        }
+
+        .mb {
+            margin-left: 20px;
+            text-decoration: none;
+            
+        }
+
+        .up {
+            border-radius: 10px;
+        }
+
+        li a:hover {
+            color: gray;
+        }
+
+        .mb a:hover {
+            color: rgb(255, 0, 0);
+        }
+
+        .intro {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            margin: 20px auto;
+            font-size: 18px;
+        }
+
+        #About {
+            background-color: #333333;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            margin: 20px auto;
+            font-size: 18px;
+        }
+
+        .lin a {
+            color: wheat;
+            text-decoration: none;
+            font-size: 20px;
+            margin-top: 5px;
+        }
+
+        .lin a:hover {
+            text-decoration: underline;
+        }
+
+        .min {
+            margin-top: 20px;
+            width: 320px;
+            height: 80px;
+            background-color: #333333;
+            border-radius: 25px;
+        }
+
+        .ab {
+            background-color: #333333;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            margin: 20px auto;
+            font-size: 45px;
+            color: black;
+        }
+
+
+
+
+
+
+
+
+/* Back to Top Button Styling */
+.btn-top {
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid #eee;
+  font-size: 28px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 1000;
+}
+
+/* Hover State */
+.btn-top:hover {
+  transform: translateY(-10px);
+  background: #fff;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Emoji Bounce */
+.btn-top:hover .icon {
+  animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-5px); }
+}
+
+/* Smooth Scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
+}
