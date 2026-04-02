@@ -16,7 +16,6 @@ const videoData = [
     { title: "Solo Leveling Movie <br> Update", url: "animenews/Solo Leveling Movie Update.mp4" },
     { title: "The Big 4 Returns in <br> 2026", url: "animenews/The Big 4 Returns in 2026.mp4" },
     { title: "World's Biggest Anime <br> Piracy HiAnime <br> Got Shutdown", url: "animenews/World's Biggest Anime Piracy HiAnime Got Shutdown.mp4" },
-    
     // Add all 100 here...
 ];
 
@@ -30,7 +29,7 @@ function loadVideos(data) {
         <div class="video-card" onclick="openVideo('${vid.url}')">
             <div class="thumb-container">
                 <video class="thumb-video" preload="metadata">
-                    <source src="${vid.url}#t=0.1" type="video/mp4">
+                    <source src="${vid.url}#t=5.0" type="video/mp4">
                 </video>
             </div>
             <div class="video-title">${vid.title}</div>

@@ -4,6 +4,7 @@ const videoData = [
     { title: "Anime Edits I Spent 1 Hours", url: "animevideo/Anime Edits I Spent 1 Hours.mp4" },
     { title: "7 Anime Genre Video with Top 5 Anime Edits", url: "animevideo/genre video.mp4" },
     { title: "Naruto Shippuden Edits", url: "animevideo/Naruto Shippuden Edits.mp4" },
+    { title: "Anime Ultimate Edits", url: "animevideo/Anime Live.mp4" },
     // Simply continue adding your video objects here...
 ];
 

@@ -43,6 +43,8 @@ const videoData = [
     { title: "The Daily Life<br> of the Immortal<br> King", url: "aepirating/The Daily Life of the Immortal King.mp4" },
     { title: "Vinland Saga", url: "aepirating/Vinland Saga.mp4" },
     { title: "Zom 100 - Bucket<br> List of the Dead", url: "aepirating/Zom 100 - Bucket List of the Dead.mp4" },
+    { title: "Assassination Classroom", url: "aepirating/Assassination Classroom.mp4" },
+    { title: "Overlord", url: "aepirating/Overlord.mp4" },
     // Add all 100 here...
 ];
 
